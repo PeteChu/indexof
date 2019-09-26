@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import IndexOfList from "./IndexOfList";
 
 class IndexOfTable extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   _renderIndexOfList(data) {
     const indexOfList = data.map(
       ({ name, icon, github, repo_name, homepage, description }) => {
@@ -34,15 +30,9 @@ class IndexOfTable extends Component {
               <th>
                 <img alt=""></img>
               </th>
-              <th>
-                <a href="#">Name</a>
-              </th>
-              <th>
-                <a href="#">Github</a>
-              </th>
-              <th>
-                <a href="#">Description</a>
-              </th>
+              <th>Name</th>
+              <th>Github</th>
+              <th>Description</th>
             </tr>
             <tr>
               <th colSpan="5" className="">
